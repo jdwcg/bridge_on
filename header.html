@@ -7,14 +7,42 @@
       <img src="imgs/logo.svg" alt="">
     </a>
   </span>
-  <span class="navIcon">
+  <span class="navIcon" onclick="navSearch();">
     <i class="bi bi-search"></i>
   </span>
 </div>
+
+<!-- 전체메뉴 -->
+<nav id="asideMenu">
+  <ul>
+    <li>HTML</li>
+  </ul>
+</nav>
+
+<!-- 서치바 -->
+<form class="topSearch" id="topSearch">
+  <span onclick="navSearch()">
+    <i class="bi bi-x-lg"></i>
+  </span>
+
+  <input type="text">
+  <input id="searchBtn" type="submit" value="">
+  <label for="searchBtn">
+    <i class="bi bi-search"></i>
+  </label>
+
+</form>
+
 
 <script>
   function navOpen() {
     var asideMenu = document.getElementById('asideMenu');
     asideMenu.classList.toggle('asideMenuOpen');
   }
+  function navSearch() {
+    var topSearch = document.getElementById('topSearch');
+    topSearch.classList.toggle('topSearchOpen');
+  }
+
+
 </script>

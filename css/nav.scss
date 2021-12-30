@@ -5,10 +5,12 @@
   align-items: center;
 }
 #logo {
-  display: flex;
-  align-items: center;
-  img {
-    height: 20px;
+  > a {
+    display: flex;
+    align-items: center;
+    > img {
+      height: 20px;
+    }
   }
 }
 #navOpen {
@@ -29,5 +31,20 @@
 }
 .asideMenuOpen {
   transform: translateX(280px);
+  transition: all .4s ease-in-out;
+}
+
+.topSearch {
+  position: fixed; z-index: 9;
+  top: -48px; height: 48px;
+  background: #eee;
+  width: 100%;
+  @media(min-width: 480px) {
+    width: 480px;
+  }
+}
+
+.topSearchOpen {
+  transform: translateY(48px);
   transition: all .4s ease-in-out;
 }
