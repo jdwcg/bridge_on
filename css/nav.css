@@ -1,0 +1,14 @@
+.headBar_wrap { padding: .4rem 1em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+#logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+#logo img { height: 20px; }
+
+#navOpen { font-size: 24px; }
+
+.navIcon { font-size: 20px; color: var(--main-color); }
+
+#asideMenu { position: fixed; z-index: 10; top: 0; left: -280px; background: #fff; overflow-y: auto; width: 280px; border: 1px solid tan; }
+
+.asideMenuOpen { -webkit-transform: translateX(280px); transform: translateX(280px); -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
+
+/*# sourceMappingURL=nav.css.map */

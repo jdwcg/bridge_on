@@ -1,0 +1,20 @@
+<div class="headBar_wrap">
+  <span class="navIcon" id="navOpen" onclick="navOpen();">
+    <i class="bi bi-list"></i>
+  </span>
+  <span id="logo">
+    <a href="javascript:void(0)">
+      <img src="imgs/logo.svg" alt="">
+    </a>
+  </span>
+  <span class="navIcon">
+    <i class="bi bi-search"></i>
+  </span>
+</div>
+
+<script>
+  function navOpen() {
+    var asideMenu = document.getElementById('asideMenu');
+    asideMenu.classList.toggle('asideMenuOpen');
+  }
+</script>
