@@ -2,6 +2,8 @@
 .headBar_wrap .headBar span { padding: 0 1.250rem; }
 @media (min-width: 480px) { .headBar_wrap .headBar { width: 480px; } }
 
+.head_height { height: 50px; }
+
 #logo > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 #logo > a > img { height: 20px; }
 
