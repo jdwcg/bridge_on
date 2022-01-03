@@ -14,9 +14,10 @@
 
 <!-- 전체메뉴 -->
 <nav id="asideMenu">
-  <ul>
-    <li>HTML</li>
-  </ul>
+  <div onclick="navOpen();" class="logo">
+    <img src="imgs/logo.svg" alt="image">
+    <span><i class="bi bi-x-lg"></i></span>
+  </div>
 </nav>
 
 <!-- 검색바 -->
@@ -30,14 +31,21 @@
   <label for="searchBtn">
     <i class="bi bi-search"></i>
   </label>
-
 </form>
 
+<div id="blackBg" onclick="navOpen();"></div>
 
 <script>
+  blackBg.style.display="none";
   function navOpen() {
     var asideMenu = document.getElementById('asideMenu');
+    var blackBg = document.getElementById('blackBg');
     asideMenu.classList.toggle('asideMenuOpen');
+    if(blackBg.style.display === "block") {
+      blackBg.style.display = "none";
+    } else {
+      blackBg.style.display = "block";
+    }
   }
   function navSearch() {
     var topSearch = document.getElementById('topSearch');

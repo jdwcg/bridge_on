@@ -23,11 +23,13 @@
 
 #asideMenu {
   position: fixed; z-index: 10;
-  top: 0; left: -280px;
+  top: 0;
+  // left: -280px;
+  left: 0;
   background: #fff;
   overflow-y: auto;
-  width:280px;
-  border: 1px solid tan;
+  width:280px; height: 100%;
+
 }
 .asideMenuOpen {
   transform: translateX(280px);
@@ -47,4 +49,23 @@
 .topSearchOpen {
   transform: translateY(48px);
   transition: all .4s ease-in-out;
+}
+
+#blackBg {
+  position: fixed; z-index: 9;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .3;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em;
+}
+.logo img {
+  height: 20px;
 }
