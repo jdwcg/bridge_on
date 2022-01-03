@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
   <title>Main</title>
 </head>
 <body class="body">
@@ -36,7 +37,10 @@
     <div><img src="" alt="img3"></div>
   </section>
 
-
+  <section class="thum_component_wrap">
+    <div class="thum_component"></div>
+    <div class="thum_component"></div>
+  </section>
 
   <footer id="footer"></footer>
 
@@ -56,7 +60,7 @@
   });
 </script>
 
-<!-- header  -->
+<!-- header, footer  -->
 <script>
 $(document).ready(function() {
   $.ajax({
@@ -71,6 +75,14 @@ $(document).ready(function() {
      url : "footer.html",
      success : function(result) {
          $("#footer").html(result);
+     }
+  });
+ });
+$(document).ready(function() {
+  $.ajax({
+     url : "thum_component.html",
+     success : function(result) {
+         $(".thum_component").html(result);
      }
   });
  });

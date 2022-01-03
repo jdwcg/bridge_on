@@ -1,15 +1,17 @@
 <div class="headBar_wrap">
-  <span class="navIcon" id="navOpen" onclick="navOpen();">
-    <i class="bi bi-list"></i>
-  </span>
-  <span id="logo">
-    <a href="javascript:void(0)">
-      <img src="imgs/logo.svg" alt="">
-    </a>
-  </span>
-  <span class="navIcon" onclick="navSearch();">
-    <i class="bi bi-search"></i>
-  </span>
+  <div class="headBar">
+    <span class="navIcon" id="navOpen" onclick="navOpen();">
+      <i class="bi bi-list"></i>
+    </span>
+    <span id="logo">
+      <a href="javascript:void(0)">
+        <img src="imgs/logo.svg" alt="">
+      </a>
+    </span>
+    <span class="navIcon" onclick="navSearch();">
+      <i class="bi bi-search"></i>
+    </span>
+  </div>
 </div>
 
 <!-- 전체메뉴 -->
@@ -44,15 +46,23 @@
 
 <!-- 검색바 -->
 <form class="topSearch" id="topSearch">
-  <span onclick="navSearch()">
-    <i class="bi bi-x-lg"></i>
-  </span>
+  <div class="search-inner">
+    <span onclick="navSearch()">
+      <i class="bi bi-x-lg"></i>
+    </span>
+  </div>
 
-  <input type="text">
-  <input id="searchBtn" type="submit" value="">
-  <label for="searchBtn">
-    <i class="bi bi-search"></i>
-  </label>
+  <div class="search-inner search-input">
+    <input type="text" placeholder="검색어를 입력하세요.">
+  </div>
+
+  <div class="search-inner">
+    <input id="searchBtn" type="submit" value="">
+    <label for="searchBtn">
+      <i class="bi bi-search"></i>
+    </label>
+  </div>
+
 </form>
 
 <div id="blackBg" onclick="navOpen();"></div>

@@ -1,8 +1,19 @@
 .headBar_wrap {
-  padding: .4rem 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .headBar {
+    padding: .425em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; z-index: 5;
+    width: 100%;
+    background: #fff;
+    span {
+      padding: 0 1.250rem;
+    }
+    @media(min-width: 480px) {
+      width: 480px;
+    }
+  }
 }
 #logo {
   > a {
@@ -37,17 +48,42 @@
 
 .topSearch {
   position: fixed; z-index: 9;
-  top: -48px; height: 48px;
-  background: #eee;
+  top: -48px;
+  // top: 0;
+  height: 48px;
+  background: #fff;
   width: 100%;
+  display: flex;
+  justify-content: space-between; align-items: center;
   @media(min-width: 480px) {
     width: 480px;
+  }
+  .search-inner {
+    display: flex;
+    justify-content: space-between; align-items: center;
+    padding: 0 1.250em;
+  }
+}
+#searchBtn {visibility: hidden;}
+
+.search-input {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding: 0 !important;
+  > input {
+    width: 100%;
+    padding: .4em .4em;
+    border: none;
+    &::placeholder {
+      letter-spacing: -1px;
+      color: #999;
+    }
   }
 }
 
 .topSearchOpen {
   transform: translateY(48px);
-  transition: all .4s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 #blackBg {
