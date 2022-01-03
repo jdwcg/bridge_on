@@ -47,7 +47,7 @@
 <!-- 검색바 -->
 <form class="topSearch" id="topSearch">
   <div class="search-inner">
-    <span onclick="navSearch()">
+    <span onclick="navSearchClose()">
       <i class="bi bi-x-circle"></i>
     </span>
   </div>
@@ -82,6 +82,11 @@
   function navSearch() {
     var topSearch = document.getElementById('topSearch');
     var focus = document.getElementById('focus').focus();
+    topSearch.classList.toggle('topSearchOpen');
+  }
+  function navSearchClose() {
+    var topSearch = document.getElementById('topSearch');
+    var focus = document.getElementById('focus').blur();
     topSearch.classList.toggle('topSearchOpen');
   }
 </script>
