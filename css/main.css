@@ -41,6 +41,6 @@ button:hover { cursor: pointer; }
 .heading h1 { font-size: 1.250rem; padding: .625em 0; color: #5E79BB; }
 .heading p { color: #aaa; }
 
-.thum_component_wrap { padding: 1.250em; }
+.thum_component_wrap { padding: 1.250em 1.250em 0; }
 
 /*# sourceMappingURL=main.css.map */
