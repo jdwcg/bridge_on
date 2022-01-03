@@ -22,12 +22,23 @@
     <div><img src="" alt="img2"></div>
     <div><img src="" alt="img3"></div>
   </section>
+  <hr class="divLine" />
 
+  <div class="heading">
+    <h1>로렘입숨</h1>
+    <p>브릿지온의 베스트 상품을 만나보세요.</p>
+  </div>
+
+  <hr class="divLine" />
   <section class="lazy slider slider2nd" data-sizes="100vw">
     <div><img src="" alt="img1"></div>
     <div><img src="" alt="img2"></div>
     <div><img src="" alt="img3"></div>
   </section>
+
+
+
+  <footer id="footer"></footer>
 
 </div>
 
@@ -52,6 +63,14 @@ $(document).ready(function() {
      url : "header.html",
      success : function(result) {
          $("#header").html(result);
+     }
+  });
+ });
+$(document).ready(function() {
+  $.ajax({
+     url : "footer.html",
+     success : function(result) {
+         $("#footer").html(result);
      }
   });
  });

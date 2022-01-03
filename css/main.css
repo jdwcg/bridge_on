@@ -34,4 +34,10 @@ button:hover { cursor: pointer; }
 
 .slick-slide { margin: 0 !important; }
 
+.divLine { padding: 0 1rem; border: none; background: #eee; height: 1px; margin: 1em 1.250rem; }
+
+.heading { text-align: center; }
+.heading h1 { font-size: 1.250rem; padding: .625em 0; color: #5E79BB; }
+.heading p { color: #aaa; }
+
 /*# sourceMappingURL=main.css.map */

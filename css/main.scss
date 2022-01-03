@@ -47,3 +47,22 @@ button {
   }
 }
 .slick-slide {margin: 0 !important;}
+
+.divLine {
+  padding: 0 1rem;
+  border: none;
+  background: #eee;
+  height: 1px;
+  margin: 1em 1.250rem;
+}
+.heading {
+  text-align: center;
+  h1  {
+    font-size: 1.250rem;
+    padding: .625em 0;
+    color: #5E79BB;
+  }
+  p {
+    color: #aaa;
+  }
+}
