@@ -7,7 +7,7 @@
 
 .navIcon { font-size: 20px; color: var(--main-color); }
 
-#asideMenu { position: fixed; z-index: 10; top: 0; left: 0; background: #fff; overflow-y: auto; width: 280px; height: 100%; }
+#asideMenu { position: fixed; z-index: 10; top: 0; left: -280px; background: #EEF0F5; overflow-y: auto; width: 280px; height: 100%; }
 
 .asideMenuOpen { -webkit-transform: translateX(280px); transform: translateX(280px); -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out; }
 
@@ -18,8 +18,13 @@
 
 #blackBg { position: fixed; z-index: 9; top: 0; left: 0; width: 100%; height: 100%; background: black; opacity: .3; }
 
-.logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: .5em; }
-
+.logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: .755em; border-bottom: 1px solid #DBDCEE; }
+.logo > span > i { font-size: 1rem; }
 .logo img { height: 20px; }
+
+.icons { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding: .7em .4em; border-bottom: 1px solid #DBDCEE; }
+.icons .col { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; color: #777; }
+.icons .col > i { font-size: 1.3rem; }
+.icons .col > a { color: #777; font-size: 12px; text-decoration: none; letter-spacing: -.5px; }
 
 /*# sourceMappingURL=nav.css.map */

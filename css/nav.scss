@@ -24,12 +24,11 @@
 #asideMenu {
   position: fixed; z-index: 10;
   top: 0;
-  // left: -280px;
-  left: 0;
-  background: #fff;
+  left: -280px;
+  // left: 0;
+  background: #EEF0F5;
   overflow-y: auto;
   width:280px; height: 100%;
-
 }
 .asideMenuOpen {
   transform: translateX(280px);
@@ -64,8 +63,35 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5em;
+  padding: .755em;
+  border-bottom: 1px solid #DBDCEE;
+  > span > i {
+    font-size: 1rem;
+  }
+  img {
+    height: 20px;
+  }
 }
-.logo img {
-  height: 20px;
+
+.icons {
+  display: flex;
+  justify-content:space-around;
+  padding: .7em .4em;
+  border-bottom: 1px solid #DBDCEE;
+  .col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+    color: #777;
+    > i {
+      font-size: 1.3rem;
+    }
+    > a {
+      color: #777;
+      font-size: 12px;
+      text-decoration: none;
+      letter-spacing: -.5px;
+    }
+  }
 }
